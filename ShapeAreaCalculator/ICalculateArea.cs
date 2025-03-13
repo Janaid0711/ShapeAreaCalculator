@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace ShapeAreaCalculator
 {
-    interface ICalculateArea
+    internal interface ICalculateArea
     {
+        double CalculateArea();
+
     }
 }
