@@ -29,7 +29,7 @@ namespace ShapeAreaCalculator
         public override void Display()
         {
             base.Display();
-            Console.WriteLine($"Width: {Width} ,Height: {Height}, Area: {CalculateArea()}");
+            Console.WriteLine($"Width: {Width}\nHeight: {Height}\nArea: {CalculateArea()}");
         }
     }
 }
