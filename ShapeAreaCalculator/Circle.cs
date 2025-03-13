@@ -23,7 +23,7 @@ namespace ShapeAreaCalculator
         public override void Display()
         {
             base.Display();
-            Console.WriteLine($"Radius: {Radius}, Area: {CalculateArea()}");
+            Console.WriteLine($"Radius: {Radius}, Area: {CalculateArea():F2}");
         }
     }
 }
