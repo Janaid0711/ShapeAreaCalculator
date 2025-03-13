@@ -6,7 +6,30 @@ using System.Threading.Tasks;
 
 namespace ShapeAreaCalculator
 {
-    class Rectangle
+    internal class Rectangle:Shape, ICalculateArea
     {
+        public double Width { get; set; }
+
+        public double Height { get; set; }
+
+        //Constructor
+        public Rectangle(string name, double width, double height) : base(name)
+        {
+            Width = width;
+            Height = height;
+        }
+
+        //Method to calculate area
+        public double CalculateArea()
+        {
+            return Width * Height;
+        }
+
+        //Override Display method
+        public override void Display()
+        {
+            base.Display();
+            Console.WriteLine($"Width: {Width} ,Height: {Height}, Area: {CalculateArea()}");
+        }
     }
 }
